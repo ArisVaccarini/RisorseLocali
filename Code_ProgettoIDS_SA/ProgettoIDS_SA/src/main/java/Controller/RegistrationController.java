@@ -19,6 +19,10 @@ public class RegistrationController {
         this.turista = new Turista();
     }
 
+    /**
+     * Setta nel turista l'account precedentemente creato
+     * @param newAccount il nuovo account
+     */
     public void newAccount(Account newAccount){
         this.turista.setNewAccount(newAccount);
     }
@@ -35,6 +39,9 @@ public class RegistrationController {
         return false;
     }
 
+    /**
+     * Resetta lo stato della registrazione
+     */
     public void resetRegistration(){
         this.turista = null;
     }

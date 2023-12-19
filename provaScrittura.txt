@@ -1,1 +1,1 @@
-TuristaAutenticato{nomeUtente='h', email='h', password='h', anagrafica=DatiAnagrafici{nome='h', cognome='h', cf='h', numTel='h'}, residenza=DatiAbitativi{comune='h', via='hh', civico='h', CAP=9}}
+TuristaAutenticato{nomeUtente='Samupiro', email='sam', password='sam', anagrafica=DatiAnagrafici{nome='S', cognome='s', cf='s', numTel='s'}, residenza=DatiAbitativi{comune='s', via='s', civico='s', CAP=7}}
