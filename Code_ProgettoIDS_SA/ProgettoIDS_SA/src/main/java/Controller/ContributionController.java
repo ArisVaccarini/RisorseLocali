@@ -1,11 +1,12 @@
 package Controller;
 
 import Control.GeometryPositionVerify;
+import Database.DBManager;
+import Model.Contribuzione;
+import Model.ElementiMappa;
 import Model.MappaComune;
 import Model.POI;
-
 import java.io.IOException;
-import java.util.ArrayList;
 
 /**
  * Questa classe ha il compito di gestire tutte le operazioni standard
@@ -14,8 +15,11 @@ import java.util.ArrayList;
  */
 public class ContributionController {
     private MappaComune mappaComune;
-    public ContributionController() {
-        this.mappaComune = new MappaComune(new ArrayList<>(),new ArrayList<>());
+    private Contribuzione acccountContributore;
+
+    public ContributionController(Contribuzione acccountContributore) {
+        this.mappaComune = new MappaComune();
+        this.acccountContributore = acccountContributore;
     }
 
     public MappaComune getMappaComune() {
@@ -36,23 +40,39 @@ public class ContributionController {
     }
 
     /**
-     * Verifica se un nuovo punto da aggiungere,è già presente
+     * Verifica se un nuovo elemento da aggiungere,è già presente
      * nella mappa del territorio
      *
-     * @param newPoi il punto da verificare
+     * @param newElement il punto da verificare
      * @return true se è già presente, false altrimenti.
      */
-    public boolean alreadyInMap(POI newPoi){
-        return this.mappaComune.isInMap(newPoi);
+    public boolean alreadyInMap(ElementiMappa newElement){
+        return this.mappaComune.isInMap(newElement);
     }
 
     /**
-     * Aggiunge un nuovo punto (passatogli come parametro)
-     * alla mappa del comune
+     * Aggiunge un nuovo elemento (passatogli come parametro)
+     * nella mappa del comune.
      *
-     * @param newPOI Il punto da aggiungere
+     * @param newElement l'elemento da aggiungere
+     * @return true se l'operazione è andata a buon fine, altrimenti false
      */
-    public void insertNewPOI(POI newPOI){
-        this.mappaComune.getListaPoi().add(newPOI);
+    public boolean insertElementInMap(ElementiMappa newElement){
+        DBManager.getInstance().reactOnInsertElement(newElement);
+        this.mappaComune.getElementiMappa().put(newElement.getId(),newElement);
+        return this.acccountContributore.addNewComponent(newElement).execute();
     }
+
+    /**
+     * Modifica un elemento (passatogli come parametro)
+     * della mappa del comune
+     *
+     * @param elemento l'elemento da modificare
+     * @return true se l'operazione è andata a buon fine, altrimenti false
+     */
+    public boolean modifyElementInMap(ElementiMappa elemento, String idElementToModify){
+        DBManager.getInstance().reactOnInsertOverrideElement(elemento,idElementToModify);
+        return this.acccountContributore.modifyComponent(elemento,idElementToModify).execute();
+    }
+
 }

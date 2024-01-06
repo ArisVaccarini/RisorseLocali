@@ -1,8 +1,7 @@
 package View;
 
 import Controller.ContributionController;
-import Model.ElementiMappa;
-import Model.POI;
+import Model.*;
 import Recources.Coordinate;
 
 import java.io.IOException;
@@ -13,7 +12,9 @@ public class ContribuisciAutView {
     private ContributionController contributionController;
 
     public ContribuisciAutView() {
-        this.contributionController = new ContributionController();
+        this.contributionController = new ContributionController(new Contributors("sa","sa",
+                "sa",new DatiAnagrafici(null,null,null,null),new DatiAbitativi(null,null,
+        null,0)));
     }
 
     public void mainMenu()  {
@@ -73,7 +74,7 @@ public class ContribuisciAutView {
         System.out.println("Confermare la contribuzione? (Si o No)");
         Scanner scanner = new Scanner(System.in);
         if(scanner.nextLine().equals("Si")){
-            this.contributionController.insertNewPOI(newPoi);
+            this.contributionController.insertElementInMap(newPoi);
             System.out.println("Contribuzione portata a termine con successo!");
             return true;
         }

@@ -1,17 +1,20 @@
 package View;
 
 import Controller.RegistrationController;
+import Database.DBManager;
 import Model.*;
 import Control.GeometryPositionVerify;
 import Recources.Ruoli;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.Scanner;
 
 public class App {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, SQLException {
 
+        /*
         RegistrationController registrationController = new RegistrationController();
         System.out.println("Credenziali" + "\n" + "Inserire nomeUtente");
         Scanner scanner = new Scanner(System.in);
@@ -38,10 +41,13 @@ public class App {
             registrationController.registerNewAccount(false);
             System.out.println("Registrazione annullata");
         }
-         /*
+
+
         HomeView homeView = new HomeView();
         homeView.mainMenu();
-          */
+         */
+        DBManager dbManager = new DBManager();
+        //dbManager.test();
     }
 
     public static DatiAnagrafici scriviAnagrafica(){

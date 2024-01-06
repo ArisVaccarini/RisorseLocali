@@ -9,8 +9,8 @@ import java.util.Objects;
 
 public class Coordinate {
 
-    private final double lat;
-    private final double lon;
+    private double lat;
+    private double lon;
 
     public Coordinate(double lat, double lon) {
         this.lat = lat;
@@ -23,6 +23,14 @@ public class Coordinate {
 
     public double getLon() {
         return lon;
+    }
+
+    public void setLat(double lat) {
+        this.lat = lat;
+    }
+
+    public void setLon(double lon) {
+        this.lon = lon;
     }
 
     @Override

@@ -1,5 +1,12 @@
 package Model;
 
+import Command.InsertElementCommand;
+import Command.ModifyElementCommand;
+import Command.NewRequestCommand;
+import Command.RequestCommand;
+import Control.TypeChecker;
+import Recources.StatusRequest;
+
 /**
  * Questa classe ha il compito di rappresentare un contributore
  * autorizzato della piattaforma. Il contributore è detto autorizzato
@@ -7,7 +14,7 @@ package Model;
  * base di dati, non sono sottoposte a verifiche da parte dei Curatori
  * della piattaforma.
  */
-public class ContributorsAutorizzato implements Account{
+public class ContributorsAutorizzato implements Contribuzione {
 
     private String nomeUtente;
     private String email;
@@ -46,9 +53,27 @@ public class ContributorsAutorizzato implements Account{
     public void modifyAccount() {
 
     }
-
     @Override
     public Account getAccount() {
         return this;
+    }
+
+    @Override
+    public RequestCommand addNewComponent(ElementiMappa newElem){
+        InsertElementCommand command = new InsertElementCommand(StatusRequest.APPROVED, this.getNomeUtente(),
+                "Inserimento -> " + newElem.getClass().getSimpleName(), newElem, new TypeChecker().checkTipo(newElem));
+        NewRequestCommand newCommand = new NewRequestCommand(command,newElem);
+        newCommand.execute();
+        return newCommand.getCommand();
+    }
+
+    @Override
+    public RequestCommand modifyComponent(ElementiMappa newElem, String idElementoToModify) {
+        ModifyElementCommand command = new ModifyElementCommand(StatusRequest.APPROVED,
+                this.getNomeUtente(),"Modifica -> " + newElem.getClass().getSimpleName(),
+                newElem,idElementoToModify, new TypeChecker().checkTipo(newElem));
+        NewRequestCommand newCommand = new NewRequestCommand(command, newElem,idElementoToModify);
+        newCommand.execute();
+        return newCommand.getCommand();
     }
 }

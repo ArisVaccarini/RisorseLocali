@@ -42,9 +42,11 @@ public class VisualizeContentView {
     public void showContentFiltered(ArrayList<? extends ElementiMappa> arrayList){
         boolean flag = true;
         while (flag){
-         for (ElementiMappa content: arrayList) {
-            System.out.println(content.showGeneralInformationComponent());
-         }
+            if(arrayList != null){
+                for (ElementiMappa content: arrayList) {
+                    System.out.println(content.showGeneralInformationComponent());
+                }
+            }
             System.out.println("Inserire il nome uno dei contenuti da visualizzare, oppure premi 1 per uscire:");
             Scanner scanner = new Scanner(System.in);
             String op = scanner.nextLine();
@@ -52,7 +54,7 @@ public class VisualizeContentView {
                 flag = false;
             else
                 System.out.println(this.visualizeController.getMappaComune()
-                    .obtainSpecificPOI(op).showSpecificInformationComponent());
+                        .obtainSpecificElement(op).showSpecificInformationComponent());
         }
     }
 

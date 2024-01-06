@@ -1,11 +1,25 @@
 package Model;
 
+import Recources.StatusElement;
+
 /**
  * Questa interfaccia rappresenta ogni tipo di elemento presente nella mappa,
- * come POI e itineriri, e le loro operazioni standard
+ * come POI e itinerari, e le loro operazioni standard
  */
 
 public interface ElementiMappa {
+
+    String getId();
+    StatusElement getStatus();
+    String getNome();
+    String getDescrizione();
+
+    /**
+     * Cambia lo stato dello specifico elemento della
+     * mappa
+     * @param newStatus il nuovo stato
+     */
+    boolean changeStatus(StatusElement newStatus);
 
     /**
      * Visualizza le informazioni essenziali di un elemento presente all'interno
@@ -22,6 +36,5 @@ public interface ElementiMappa {
      * @return Le informazioni specifiche dell'elemento, escluse le aggiuntive
      */
     String showSpecificInformationComponent();
-
 
 }
