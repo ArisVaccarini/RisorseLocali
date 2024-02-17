@@ -12,9 +12,7 @@ Per ulteriori dettagli vedi – [Specifica progetto](https://docs.google.com/doc
 Per eseguire il progetto basterà o scaricarlo ed eseguirlo direttamente da IntelliJ, oppure eseguire questa serie di passaggi:
 
 •	Aprire il prompt dei comandi ed entrare nella cartella del progetto
-
 •	Eseguire il comando mvn clean install per installare le dipendenze
-
 •	Eseguire il comando java -jar .\target\risorseLocali-0.0.1-SNAPSHOT.jar per avviare il progetto
 
 Per far si che il progetto venga eseguito nel secondo metodo, occorre installare nel proprio terminale Maven. 
