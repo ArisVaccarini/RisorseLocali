@@ -4,11 +4,11 @@ Progetto di Ingegneria del Software (Prof. Morichetta - Prof. Polini) [ST0496] p
 -	Aris Vaccarini (N⁰ matricola 118536);
   
 Frequentati il corso di [Informatica per la Comunicazione Digitale (L-31)](http://www.didattica.cs.unicam.it/doku.php?id=didattica:licd) presso l’università di Camerino.  
-## Descrizione
+## Descrizione :page_facing_up:
 Il progetto ha come fine la valorizzazione del territorio comunale della città di Senigallia dando al cittadino la possibilità di caricare contenuti aggiuntivi come informazioni culturali, sportive, turistiche o di qualsiasi altra natura. Ognuno di questi contenuti è legato a un punto di interesse (o “POI”) o un itinerario, entrambi geolocalizzati nel comune di riferimento e definibili, come per i contenuti, dagli utenti stessi.
 
 Per ulteriori dettagli vedi – [Specifica progetto](https://docs.google.com/document/d/1kqarA2bRB8I8StOazcWotmkxf4Afycyl34a-n536JHo/edit)
-## Come eseguire il progetto
+## Come eseguire il progetto :gear:
 Per eseguire il progetto basterà o scaricarlo ed eseguirlo direttamente da IntelliJ, oppure eseguire questa serie di passaggi:
 
 •	Aprire il prompt dei comandi ed entrare nella cartella del progetto
