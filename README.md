@@ -19,5 +19,5 @@ Per eseguire il progetto basterà o scaricarlo ed eseguirlo direttamente da Inte
 
 Per far si che il progetto venga eseguito nel secondo metodo, occorre installare nel proprio terminale Maven. 
 Guida -> [Come installare Maven](https://www.html.it/articoli/maven-organizzazione-dei-progetti-java/) 
-## Testare il progetto
+## Testare il progetto :computer:
 Per interagire con il progetto, all’interno della cartella “ApiExemple” sono stati lasciati degli oggetti JSON e le corrispettive chiamate REST API da utilizzare su Postman, essendo il progetto sprovvisto di interfaccia grafica.
