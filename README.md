@@ -20,6 +20,7 @@ Per eseguire il progetto basterà o scaricarlo ed eseguirlo direttamente da Inte
 •	Eseguire il comando `java -jar .\target\risorseLocali-0.0.1-SNAPSHOT.jar` per avviare il progetto;
 
 Per far si che il progetto venga eseguito nel secondo metodo, occorre installare nel proprio terminale Maven. 
+
 Guida -> [Come installare Maven](https://www.html.it/articoli/maven-organizzazione-dei-progetti-java/) :inbox_tray:
 ## Testare il progetto :computer:
 
