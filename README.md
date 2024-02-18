@@ -1,7 +1,7 @@
 # Progetto IdS 2023/2024
 Progetto di [Ingegneria del Software (Prof. Morichetta - Prof. Polini)](http://www.didattica.cs.unicam.it/doku.php?id=didattica:ay2324:ids:main) per la valorizzazione del territorio comunale, sviluppato da:
--	[Samuele Pirani](https://github.com/SamuelePirani) (N⁰ matricola 118535);
--	[Aris Vaccarini](https://github.com/ArisVaccarini) (N⁰ matricola 118536);
+-	:construction_worker: [Samuele Pirani](https://github.com/SamuelePirani) (N⁰ matricola 118535);
+-	:construction_worker: [Aris Vaccarini](https://github.com/ArisVaccarini) (N⁰ matricola 118536);
   
 Frequentati il corso di [Informatica per la Comunicazione Digitale (L-31)](http://www.didattica.cs.unicam.it/doku.php?id=didattica:licd) presso l’università di Camerino.  
 
