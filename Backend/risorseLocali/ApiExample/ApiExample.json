@@ -1,0 +1,82 @@
+[LOGIN - POST METHOD]
+
+{
+    "username": "Sam",
+    "password" : "password"
+}
+
+[OR]
+
+{
+    "username": "Aris",
+    "password" : "password"
+}
+
+[REGISTRAZIONE - POST METHOD]
+
+{
+    "nomeUtente": "user",
+    "email": "user@prova.it",
+    "password": "password",
+    "anagrafica":   
+    {
+        "nome": "User",
+        "cognome": "User",
+        "cf": "CF",
+        "telefono": "+392636635",
+        "indirizzo":
+        {
+            "via": "via Prova",
+            "numeroCivico": "1",
+            "cap": 60019
+        }
+    }
+}
+
+[AGGIUNGI POI - POST METHOD]
+
+{
+    "nome": "Bar Piazza Saffi",
+    "descrizione": "Bar centrale di piazza Saffi",
+    "posizione": {"latitudine": 43.713281, "longitudine": 13.219681}
+}
+
+[MODIFICA POI - PUT METHOD]
+
+{
+    "nome": "Bar Piazza Saffi",
+    "descrizione": "Bar centrale di piazza Saffi",
+    "posizione":{"latitudine": 43.713506, "longitudine": 13.219652}
+}
+
+[AGGIUNGI ITINERARIO - POST METHOD]
+
+{
+   "nome": "Percorso prova",
+   "descrizione": "prova",
+   "percorso": [
+      {
+         "id": "e01d3422-f0ee-4ecc-81c7-e5da86ce3e10"
+      }
+   ]
+}
+
+[MODIFICA ITINERARIO - PUT METHOD]
+
+{
+    "nome": "Modifica prova",
+    "descrizione": "prova",
+    "percorso": [
+      {
+        "id": "2b368a36-71b2-4aff-9857-1f9796ddddfd"
+      },
+      {
+        "id": "e01d3422-f0ee-4ecc-81c7-e5da86ce3e10"
+      }]
+}
+
+
+
+
+
+
