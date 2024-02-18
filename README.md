@@ -1,7 +1,7 @@
 # Progetto IdS 2023/2024
 Progetto di [Ingegneria del Software (Prof. Morichetta - Prof. Polini)](http://www.didattica.cs.unicam.it/doku.php?id=didattica:ay2324:ids:main) per la valorizzazione del territorio comunale, sviluppato da:
 -	[Samuele Pirani](https://github.com/SamuelePirani) (N⁰ matricola 118535);
--	Aris Vaccarini (N⁰ matricola 118536);
+-	[Aris Vaccarini](https://github.com/ArisVaccarini) (N⁰ matricola 118536);
   
 Frequentati il corso di [Informatica per la Comunicazione Digitale (L-31)](http://www.didattica.cs.unicam.it/doku.php?id=didattica:licd) presso l’università di Camerino.  
 
@@ -23,4 +23,4 @@ Per far si che il progetto venga eseguito nel secondo metodo, occorre installare
 Guida -> [Come installare Maven](https://www.html.it/articoli/maven-organizzazione-dei-progetti-java/) 
 ## Testare il progetto :computer:
 
-Per interagire con il progetto, all’interno della cartella “ApiExemple” sono stati lasciati degli oggetti JSON e le corrispettive chiamate REST API da utilizzare su Postman, essendo il progetto sprovvisto di interfaccia grafica.
+Per interagire con il progetto, all’interno della cartella `[Backend\risorseLocali\ApiExample](Backend/risorseLocali/ApiExample/ApiExample.json)` sono stati lasciati degli oggetti JSON e le corrispettive chiamate REST API da utilizzare su Postman, essendo il progetto sprovvisto di interfaccia grafica.
