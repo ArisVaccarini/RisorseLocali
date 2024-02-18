@@ -23,4 +23,4 @@ Per far si che il progetto venga eseguito nel secondo metodo, occorre installare
 Guida -> [Come installare Maven](https://www.html.it/articoli/maven-organizzazione-dei-progetti-java/) 
 ## Testare il progetto :computer:
 
-Per interagire con il progetto, all’interno della cartella `[Backend\risorseLocali\ApiExample](Backend/risorseLocali/ApiExample/ApiExample.json)` sono stati lasciati degli oggetti JSON e le corrispettive chiamate REST API da utilizzare su Postman, essendo il progetto sprovvisto di interfaccia grafica.
+Per interagire con il progetto, all’interno della cartella [`Backend\risorseLocali\ApiExample`](Backend/risorseLocali/ApiExample/ApiExample.json) sono stati lasciati degli oggetti JSON e le corrispettive chiamate REST API da utilizzare su Postman, essendo il progetto sprovvisto di interfaccia grafica.
